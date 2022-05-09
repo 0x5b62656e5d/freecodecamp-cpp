@@ -141,6 +141,11 @@
   <ItemGroup>
     <ClCompile Include="freecodecamp.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="numbers and variables.h" />
+    <ClInclude Include="var.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
