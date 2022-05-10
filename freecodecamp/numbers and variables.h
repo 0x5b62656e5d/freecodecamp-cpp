@@ -27,6 +27,7 @@ unsigned long long int unsigned unsignedllongint{ 2348 };
 
 //scientific notation
 static double scinum1{ 1.93004e7 };
+static double scinum2{ 1.3823e5 };
 
 //variables are case sensitive
 
