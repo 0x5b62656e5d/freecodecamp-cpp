@@ -4,10 +4,10 @@ static int a{ 1 }; //brace initialization
 static int b(2); //functional init
 static int c = 3; //assignment init
 
-static signed int negvalue = -300; //signed = modifier to store neg/pos values, unsigned to only store pos value
+signed int negvalue = -300; //signed = modifier to store neg/pos values, unsigned to only store pos value
 
-static short shortvar{ 255 }; //2 bytes in memory
-static short int shortint{ 234 };
+short shortvar{ 255 }; //2 bytes in memory
+short int shortint{ 234 };
 signed short int signedshort{ 284 };
 unsigned short int unsignedshort{ 245 };
 
@@ -23,7 +23,10 @@ unsigned long int unsignedlongint{ 238 };
 long long llong{ 2388 }; //8 bytes in memory
 long long int llongint{ 2382 };
 signed long long int signedllongint{ 2347 };
-unsigned long long int unsigned llongint{ 2348 };
+unsigned long long int unsigned unsignedllongint{ 2348 };
+
+//scientific notation
+static double scinum1{ 1.93004e7 };
 
 //variables are case sensitive
 
