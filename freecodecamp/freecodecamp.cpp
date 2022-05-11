@@ -1,6 +1,7 @@
 #include "main.h"
 #include "var.h"
-#include "numbers and variables.h"
+#include "numbers.h"
+#include "variables.h"
 
 int main() {
 
