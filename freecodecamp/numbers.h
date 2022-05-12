@@ -23,7 +23,7 @@ unsigned long int unsignedlongint{ 238 };
 long long llong{ 2388 }; //8 bytes in memory
 long long int llongint{ 2382 };
 signed long long int signedllongint{ 2347 };
-unsigned long long int unsigned unsignedllongint{ 2348 };
+unsigned long long int unsignedllongint{ 2348 };
 
 //scientific notation
 static double scinum1{ 1.93004e7 };

@@ -2,6 +2,7 @@
 #include "var.h"
 #include "numbers.h"
 #include "variables.h"
+#include "Output formatting.h"
 
 int main() {
 
@@ -10,6 +11,11 @@ int main() {
 	cout << scinum1 << endl;
 
 	thesizeof(a);
+	asciiID('C');
+	nameslist();
+	internaljustified();
+	fill();
+	printstates();
 
 	return 0;
 
