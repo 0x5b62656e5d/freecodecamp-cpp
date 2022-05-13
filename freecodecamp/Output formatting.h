@@ -74,4 +74,13 @@ inline void shownumform() {
 	cout << oct << number1 << endl; //prints number in octal form (base 8)
 	cout << oct << number2 << endl;
 
+	cout << showbase; //shows base for integral types
+	cout << dec << number1 << endl; //no difference
+
+	cout << hex << number1 << endl; //has 0x in front
+
+	cout << oct << number1 << endl; //has 0 in front
+
+	//do not work on floating point numbers, different protocol
+
 }
