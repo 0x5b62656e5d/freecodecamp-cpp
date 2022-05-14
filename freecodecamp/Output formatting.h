@@ -5,7 +5,7 @@ inline void nameslist() {
 
 	//setw sets width of text
 
-	cout <<left;
+	cout <<left; //sets data to left justified
 	cout << setw(10) << "Lastname" << setw(10) << "Firstname" << setw(5) << "Age" << endl;
 	cout << setw(10) << "Daniel" << setw(10) << "Gray" << setw(5) << "25" << endl;
 	cout << setw(10) << "Stanley" << setw(10) << "Woods" << setw(5) << "33" << endl;
@@ -18,7 +18,7 @@ inline void nameslist() {
 inline void internaljustified() {
 
 	cout << "Internal justified\n"; //negative sign left justified, data right justified
-	cout <<right;
+	cout <<right; //sets data to left justified
 	cout << setw(10) << -123.45 << endl;
 	cout << internal;
 	cout << setw(10) << -123.45 << endl;
