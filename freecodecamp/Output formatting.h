@@ -64,6 +64,7 @@ inline void shownumform() {
 
 	int number1{ 123678 };
 	int number2{ -123678 };
+	double long number3{ 3.1415926535897932384 };
 
 	cout << dec << number1 << endl; //prints number in decimal form (normal form)
 	cout << dec << number2 << endl;
@@ -74,13 +75,26 @@ inline void shownumform() {
 	cout << oct << number1 << endl; //prints number in octal form (base 8)
 	cout << oct << number2 << endl;
 
-	cout << showbase; //shows base for integral types
+	cout << showbase; //shows base for integral types (nothing for dec, 0x for hex, 0 for octal)
 	cout << dec << number1 << endl; //no difference
 
 	cout << hex << number1 << endl; //has 0x in front
 
 	cout << oct << number1 << endl; //has 0 in front
+	cout << endl;
+	//can also do "cout << uppercase;" to print data in uppercase (nouppercase by default)
 
 	//do not work on floating point numbers, different protocol
+
+	cout << endl;
+	cout << number3 << endl;
+	cout << setprecision(10); //default presicion is 6
+	cout << number3 << endl;
+	cout << setprecision(20);
+	cout << number3 << endl;
+	cout << endl;
+
+	//"cout << showpoint" shows decimal point for numbers like 12 (prints to 12.0000)
+	//noshowpoint is default
 
 }

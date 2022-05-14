@@ -17,6 +17,9 @@ int main() {
 	fill();
 	printstates();
 
+	cout << "Press enter to continue...";
+	cin.get();
+
 	return 0;
 
 }
