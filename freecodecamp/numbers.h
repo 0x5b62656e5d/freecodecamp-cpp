@@ -76,7 +76,7 @@ inline void rootof() {
 
 }
 
-inline void roundnum() {
+inline void roundnum2() {
 
 	cout << "3.654 is rounded to " << round(2.5) << endl; //2.5 --> 3, 2.4 --> 2
 

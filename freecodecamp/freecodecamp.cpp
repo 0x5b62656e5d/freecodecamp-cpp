@@ -3,6 +3,7 @@
 #include "numbers.h"
 #include "variables.h"
 #include "Output formatting.h"
+#include "logics.h"
 
 int main() {
 
@@ -16,6 +17,7 @@ int main() {
 	internaljustified();
 	fill();
 	printstates();
+	whattool();
 
 	cout << "Press enter to continue...";
 	cin.get();
