@@ -142,7 +142,7 @@
     <ClCompile Include="freecodecamp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="logics.h" />
+    <ClInclude Include="logics and loops.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="numbers.h" />
     <ClInclude Include="Output formatting.h" />
