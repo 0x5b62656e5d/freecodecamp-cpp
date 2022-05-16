@@ -3,7 +3,7 @@
 #include "numbers.h"
 #include "variables.h"
 #include "Output formatting.h"
-#include "logics.h"
+#include "logics and loops.h"
 
 int main() {
 

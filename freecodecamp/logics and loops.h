@@ -64,7 +64,7 @@ inline void whattool() {
 //for loop
 inline void forloop() {
 
-	for (int i(); i < 10; i++) { //for (init variable; condition; what to do after each iteration)
+	for (int i{}; i < 10; i++) { //for (init variable; condition; what to do after each iteration)
 		cout << "this is the " << i << "th operation" << endl;
 
 	}
