@@ -69,4 +69,23 @@ inline void forloop() {
 
 	}
 
+	for (size_t i{}; i < 10; i++) { //for (init variable; condition; what to do after each iteration)
+		//size_t = type alias for unsigned int (is not a type)
+		cout << "this is the " << i << "th operation" << endl;
+
+	}
+
+}
+
+//do while loop
+inline void dowhile() {
+
+	size_t i{ 10 };
+	
+	do {
+		cout << i << "th iteration" << endl;
+		i++;
+
+	} while (i < 10);
+
 }
