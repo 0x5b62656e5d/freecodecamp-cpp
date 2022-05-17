@@ -4,6 +4,7 @@
 #include "variables.h"
 #include "Output formatting.h"
 #include "logics and loops.h"
+#include "Data.h"
 
 int main() {
 
