@@ -38,3 +38,5 @@ int* p_fractional_number2{ nullptr };
 //definition
 int int_var{ 43 };
 int* p_int{ &int_var }; //& = address of variable operator
+
+//can also use pointer for char variables
