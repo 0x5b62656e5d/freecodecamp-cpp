@@ -28,14 +28,19 @@ inline void basicarray() {
 
 inline void chararray() {
 
-	char message[5]{ 'H', 'e', 'l', 'l', 'o' };
+	char message[]{ 'H', 'e', 'l', 'l', 'o', '\0' }; //"\0" = null termination string (end of string)
+	//without '\0', after printing directly to console there may be random garbage after "hello"
+	//better way to initialize char array is:
+	char message2[]{ "Hello" }; //'\0' will automitically be added to end of string
 
 	cout << "The message is: ";
 	for (auto i : message) {
 		cout << i;
 
 	}
+	cout << endl;
 	//you can also print directly to console
+	cout << message << endl;
 
 
 	//also modify the array
@@ -46,5 +51,6 @@ inline void chararray() {
 		cout << i;
 
 	}
+	cout << endl;
 
 }

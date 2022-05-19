@@ -25,3 +25,16 @@ static auto var5{ 'e' }; //char
 static auto var6{ 123u }; //unsigned
 static auto var7{ 123ul }; //unsigned long
 static auto var8{ 123ll }; //long long
+
+
+//pointers
+//declaration
+int* p_number{}; //pointer variables can only store addresses to variable of type int
+double* p_fractional_number{};
+
+int* p_number2{ nullptr }; //nullptr = not pointing anywhere
+int* p_fractional_number2{ nullptr };
+
+//definition
+int int_var{ 43 };
+int* p_int{ &int_var }; //& = address of variable operator

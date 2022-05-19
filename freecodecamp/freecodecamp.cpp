@@ -19,6 +19,7 @@ int main() {
 	fill();
 	printstates();
 	whattool();
+	chararray();
 
 	cout << "Press enter to continue...";
 	cin.get();
