@@ -40,3 +40,15 @@ int int_var{ 43 };
 int* p_int{ &int_var }; //& = address of variable operator
 
 //can also use pointer for char variables
+
+//dynamic memory
+
+inline void dynamicmem() {
+
+	int* p_number3{ nullptr }; //initialize null pointer
+	p_number3 = new int; //specifically allocates memory for p_number3
+
+	delete p_number3; //returns allocated memory to OS
+	p_number3 = nullptr; //reset pointer
+
+}
