@@ -47,6 +47,10 @@ inline void dynamicmem() {
 
 	int* p_number3{ nullptr }; //initialize null pointer
 	p_number3 = new int; //specifically allocates memory for p_number3
+	p_number3 = { new int {23} }; //uniform initialization
+
+	cout << p_number3 << endl;
+	cout << "* " << *p_number3 << endl;
 
 	delete p_number3; //returns allocated memory to OS
 	p_number3 = nullptr; //reset pointer
