@@ -41,5 +41,8 @@
     <ClInclude Include="Data.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Error handling.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

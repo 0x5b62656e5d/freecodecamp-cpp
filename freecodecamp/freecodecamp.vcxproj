@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Data.h" />
+    <ClInclude Include="Error handling.h" />
     <ClInclude Include="logics and loops.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="numbers.h" />
