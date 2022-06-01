@@ -54,3 +54,30 @@ inline void chararray() {
 	cout << endl;
 
 }
+
+//dynamic array
+void dynamicarray() {
+
+	const size_t size{ 10 };
+
+	double* p_salaries{ new double[size] }; //p_salaries will have garbage values, uninitialized
+	int* p_students{ new(nothrow) int[size] {} }; //all values 0
+	double* p_scores{ new(nothrow) double[size] {1,2,3,4,5} }; //first 5 will be 1-5 then rest will be 0
+
+	//std::size dont work on dynamic arrays
+
+	for (size_t i{}; i < size; i++) {
+		cout << "value: " << p_scores[i] << " : " << *(p_scores + i) << endl;
+
+	}
+
+	delete[] p_salaries;
+	p_salaries = nullptr;
+
+	delete[] p_students;
+	p_students = nullptr;
+
+	delete[] p_scores;
+	p_scores = nullptr;
+
+}

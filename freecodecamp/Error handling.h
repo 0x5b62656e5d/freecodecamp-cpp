@@ -28,7 +28,7 @@ void usenothrow() {
 			cout << "Memory allocation failed" << endl;
 
 		}
-		else {
+		else {	
 			cout << "Memory allocation succeeded" << endl;
 
 		}

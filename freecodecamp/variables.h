@@ -56,3 +56,16 @@ inline void dynamicmem() {
 	p_number3 = nullptr; //reset pointer
 
 }
+
+//references
+
+void references1() {
+
+	int int_value{ 45 };
+	double double_value{ 33.65 };
+
+	int& reftointval{ int_value }; //assign via init
+	int& reftointval2 = int_value; //assign via assignment
+	double& reftodoubleval{ double_value };
+
+}

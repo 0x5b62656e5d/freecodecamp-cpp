@@ -21,6 +21,8 @@ int main() {
 	whattool();
 	chararray();
 
+	dynamicarray();
+
 	cout << "Press enter to continue...";
 	cin.get();
 
