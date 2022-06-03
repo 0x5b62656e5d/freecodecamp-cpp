@@ -5,6 +5,7 @@
 #include <iomanip>
 #include <ios>
 #include <limits> //limits for types of numbers
+#include <cctype> //strings and char
 
 using namespace std;
 

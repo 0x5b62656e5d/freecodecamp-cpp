@@ -148,6 +148,7 @@
     <ClInclude Include="main.h" />
     <ClInclude Include="numbers.h" />
     <ClInclude Include="Output formatting.h" />
+    <ClInclude Include="strings and char.h" />
     <ClInclude Include="var.h" />
     <ClInclude Include="variables.h" />
   </ItemGroup>

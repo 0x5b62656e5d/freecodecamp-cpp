@@ -26,7 +26,6 @@ static auto var6{ 123u }; //unsigned
 static auto var7{ 123ul }; //unsigned long
 static auto var8{ 123ll }; //long long
 
-
 //pointers
 //declaration
 int* p_number{}; //pointer variables can only store addresses to variable of type int
@@ -67,5 +66,9 @@ void references1() {
 	int& reftointval{ int_value }; //assign via init
 	int& reftointval2 = int_value; //assign via assignment
 	double& reftodoubleval{ double_value };
+
+	//can also set constant reference
+
+	const int& const_int_value{ int_value };
 
 }

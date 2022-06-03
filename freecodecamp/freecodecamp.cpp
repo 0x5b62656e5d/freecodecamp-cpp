@@ -5,6 +5,7 @@
 #include "Output formatting.h"
 #include "logics and loops.h"
 #include "Data.h"
+#include "strings and char.h"
 
 int main() {
 
