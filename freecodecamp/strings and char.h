@@ -21,8 +21,10 @@ void checkforblank() {
 	int blankcount{};
 
 	for (size_t i{ 0 }; i < size(message); i++) {
-		cout << "Blank character at: [" << i << " ]" << endl;
-		blankcount++;
+		if (isblank(message[i])) {
+			cout << "Blank character at: [" << i << " ]" << endl;
+			blankcount++;
+		}
 
 	}
 	cout << "Found total of " << blankcount << "blanks" << endl;
@@ -69,4 +71,31 @@ void upperlower() {
 
 	cout << "Lower: " << des_msg << endl;
 	
+}
+
+//cstring
+
+void checklength() {
+
+	char message[]{ "hello world" };
+	cout << "Length of message is " << strlen(message) << "characters long" << endl;
+
+}
+
+void comparestring() {
+
+	const char* str1{ "Alabama" };
+	const char* str2{ "Blabama" };
+
+	char str3[]{ "Alabama" };
+	char str4[]{ "Blabama" };
+
+	//print out comparison
+	cout << strcmp(str1, str2) << endl; //will return negative value because letters in 1 come before 2
+	cout << strcmp(str3, str4) << endl;
+
+	//return 0 if both strings equal
+	//return positive if letters in 2 come before 1
+
+
 }
