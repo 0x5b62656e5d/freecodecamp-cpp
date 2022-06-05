@@ -97,5 +97,63 @@ void comparestring() {
 	//return 0 if both strings equal
 	//return positive if letters in 2 come before 1
 
+	//can add third argument to strcmp, how many letters to compare
+	//strcmp(aaaa,bbbb,3) tells strcmp to compare first 3 letters of str1 and str2
+
+}
+
+void searchchara() {
+
+	const char* const str{ "Try not. Do, or do not. There is no try." };
+	//make const pointer to prevent pointing somewhere else
+	char target = 'T';
+	const char* result = str;
+	size_t iterations{};
+
+	while ((result = strchr(result, target)) != nullptr) {
+		cout << "Found '" << target << "' starting at " << result << endl;
+
+		++result;
+		++iterations;
+
+	}
+	cout << iterations << " iterations" << endl;
+
+}
+
+void lastoccurrence() {
+
+	char input[]{ "/home/user/hellp.cpp" };
+	char* output = strrchr(input, '/');
+	if (output)
+		cout << output + 1 << endl;
+
+}
+
+void joinstring() {
+
+	char dest[50] = "hello ";
+	char src[50] = "world! ";
+	//arrays have to be big enough for characters to be joined
+
+	strcat(dest, src);
+	strcat(dest, " Goodbye world!");
+	cout << "dest: " << dest << endl;
+
+}
+
+void joinstring2() {
+
+	char* dest1 = new char[30]{ 'F', 'i', 'r', 'e', 'l', 'o', 'r', 'd', '\0' };
+	char* src1 =
+		new char[30]{ ',', 'T', 'h', 'e', ' ', 'P', 'h', 'e', 'n', 'i', 'x', ' ', 'K', 'i', 'n', 'g', '!', '\0' };
+
+	cout << "length of dest1" << strlen(dest1) << endl;
+	cout << "length of src1" << strlen(src1) << endl;
+
+	strcat(dest1, src1);
+
+	cout << "length of cat dest1" << strlen(dest1) << endl;
+	cout << dest1 << endl;
 
 }
