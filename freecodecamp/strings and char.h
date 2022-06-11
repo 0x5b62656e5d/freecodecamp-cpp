@@ -146,7 +146,7 @@ void joinstring2() {
 
 	char* dest1 = new char[30]{ 'F', 'i', 'r', 'e', 'l', 'o', 'r', 'd', '\0' };
 	char* src1 =
-		new char[30]{ ',', 'T', 'h', 'e', ' ', 'P', 'h', 'e', 'n', 'i', 'x', ' ', 'K', 'i', 'n', 'g', '!', '\0' };
+		new char[30]{ ',', 'T', 'h', 'e', ' ', 'P', 'h', 'e', 'o', 'n', 'i', 'x', ' ', 'K', 'i', 'n', 'g', '!', '\0' };
 
 	cout << "length of dest1" << strlen(dest1) << endl;
 	cout << "length of src1" << strlen(src1) << endl;
@@ -155,5 +155,47 @@ void joinstring2() {
 
 	cout << "length of cat dest1" << strlen(dest1) << endl;
 	cout << dest1 << endl;
+
+}
+
+void joinstringlimited() {
+
+	//strncat specifies number of characters from 2nd string to combine with 1st string
+
+	char dest2[50]{ "Hello" };
+	char source2[50]{ " There is a bird on my window" };
+
+	cout << strncat(dest2, source2, 6) << endl;
+
+	// or u can use strncat operator separately
+
+	strncat(dest2, source2, 6);
+	cout << dest2 << endl;
+
+}
+
+void copystring() {
+
+	const char* source3 = "C++ is a multipurpose programming language.";
+	char* dest3 = new char[strlen(source3) + 1];
+
+	strcpy(dest3, source3);
+
+	cout << "Sizeof(dest3): " << sizeof(dest3) << endl;
+	cout << "strlen(dest3): " << strlen(dest3) << endl;
+	cout << dest3 << endl;
+
+}
+
+void copystringlimited() {
+
+	//strncpy specifies number of characters to be copied from source to destination
+
+	const char* source4 = "Hello";
+	char dest4[]{ 'a', 'b', 'c', 'd', 'e', 'f', '\0' };
+
+	cout << "dest4: " << dest4 << endl;
+	strncpy(dest4, source4, 5);
+	cout << "dest4: " << dest4 << endl;
 
 }
