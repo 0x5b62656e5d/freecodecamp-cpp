@@ -199,3 +199,19 @@ void copystringlimited() {
 	cout << "dest4: " << dest4 << endl;
 
 }
+
+//std::string
+
+void declarestdstring() {
+
+	string full_name; //empty string
+	string planet{ "Earth. Where the sky is blue" }; //initialize with string literal
+	string preferred_planet{ planet }; //initialize with existing string
+	string message{ "Hello world",5 }; //initialize part of string
+									   //only contains hello
+	string message2{ 4, 'e' }; //initialize 4 copies of "e" (message2 = eeee)
+	string greeting{ "Hello world" };
+	string sayhello{ greeting, 6, 5 }; //initialize with part of existing string
+	//start at index 6 (space), take 5 characters (contains "world")
+
+}

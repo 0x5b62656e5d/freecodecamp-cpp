@@ -7,6 +7,7 @@
 #include <limits> //limits for types of numbers
 #include <cctype> //strings and char
 #include <cstring> //strings
+#include <string> //std::string
 
 using namespace std;
 
