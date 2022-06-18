@@ -14,31 +14,38 @@ inline void asciiID(char character) { //use static_cast<int>(character) to print
 	cout << static_cast<int>(character) << endl;
 
 }
+void autovariables() {
 
-//auto lets program guess type of variable
-static auto var1{ 12 }; //int
-static auto var2{ 14.0 }; //double
-static auto var3{ 15.01f }; //float
-static auto var4{ 15.0l }; //long
-static auto var5{ 'e' }; //char
+	//auto lets program guess type of variable
+	static auto var1{ 12 }; //int
+	static auto var2{ 14.0 }; //double
+	static auto var3{ 15.01f }; //float
+	static auto var4{ 15.0l }; //long
+	static auto var5{ 'e' }; //char
 
-static auto var6{ 123u }; //unsigned
-static auto var7{ 123ul }; //unsigned long
-static auto var8{ 123ll }; //long long
+	static auto var6{ 123u }; //unsigned
+	static auto var7{ 123ul }; //unsigned long
+	static auto var8{ 123ll }; //long long
 
-//pointers
-//declaration
-int* p_number{}; //pointer variables can only store addresses to variable of type int
-double* p_fractional_number{};
+}
 
-int* p_number2{ nullptr }; //nullptr = not pointing anywhere
-int* p_fractional_number2{ nullptr };
+void pointers() {
 
-//definition
-int int_var{ 43 };
-int* p_int{ &int_var }; //& = address of variable operator
+	//pointers
+	//declaration
+	int* p_number{}; //pointer variables can only store addresses to variable of type int
+	double* p_fractional_number{};
 
-//can also use pointer for char variables
+	int* p_number2{ nullptr }; //nullptr = not pointing anywhere
+	int* p_fractional_number2{ nullptr };
+
+	//definition
+	int int_var{ 43 };
+	int* p_int{ &int_var }; //& = address of variable operator
+
+	//can also use pointer for char variables
+
+}
 
 //dynamic memory
 
