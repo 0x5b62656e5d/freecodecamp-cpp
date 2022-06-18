@@ -15,7 +15,7 @@ void isalphanum() {
 
 // std::isalpha checks if char is part of alphabet
 
-void checkforblank() {
+/* void checkforblank() {
 
 	char message[]{ "Hello there. How are you doing?" };
 	int blankcount{};
@@ -29,7 +29,7 @@ void checkforblank() {
 	}
 	cout << "Found total of " << blankcount << "blanks" << endl;
 
-}
+} */
 
 void checkforlowerupper() {
 
@@ -52,7 +52,7 @@ void checkforlowerupper() {
 //concept is same for std::isdigit
 //std::isdigit checks if character is a number
 
-void upperlower() {
+/* void upperlower() {
 
 	char message[]{ "The quick brown fox jumps over the lazy dog" };
 	char des_msg[size(message)]; //the array where upper or lower string will be written to
@@ -71,7 +71,7 @@ void upperlower() {
 
 	cout << "Lower: " << des_msg << endl;
 	
-}
+} */
 
 //cstring
 

@@ -6,11 +6,12 @@
 #include "logics and loops.h"
 #include "Data.h"
 #include "strings and char.h"
+#include "functions.h"
 
 int main() {
 
 	cout << "Hello World!\n" << endl;
-	cout << hexa << endl;
+	/* cout << hexa << endl;
 	cout << scinum1 << endl;
 
 	thesizeof(a);
@@ -22,7 +23,9 @@ int main() {
 	whattool();
 	chararray();
 
-	dynamicarray();
+	dynamicarray(); */
+
+	datafromfunction();
 
 	cout << "Press enter to continue...";
 	cin.get();

@@ -47,5 +47,8 @@
     <ClInclude Include="strings and char.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="functions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
