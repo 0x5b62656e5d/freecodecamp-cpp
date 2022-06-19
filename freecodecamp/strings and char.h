@@ -136,8 +136,8 @@ void joinstring() {
 	char src[50] = "world! ";
 	//arrays have to be big enough for characters to be joined
 
-	strcat(dest, src);
-	strcat(dest, " Goodbye world!");
+	strcat_s(dest, src);
+	strcat_s(dest, " Goodbye world!");
 	cout << "dest: " << dest << endl;
 
 }
@@ -151,7 +151,7 @@ void joinstring2() {
 	cout << "length of dest1" << strlen(dest1) << endl;
 	cout << "length of src1" << strlen(src1) << endl;
 
-	strcat(dest1, src1);
+	strcat_s(dest1, 30, src1);
 
 	cout << "length of cat dest1" << strlen(dest1) << endl;
 	cout << dest1 << endl;
@@ -165,11 +165,11 @@ void joinstringlimited() {
 	char dest2[50]{ "Hello" };
 	char source2[50]{ " There is a bird on my window" };
 
-	cout << strncat(dest2, source2, 6) << endl;
+	cout << strncat_s(dest2, source2, 6) << endl;
 
 	// or u can use strncat operator separately
 
-	strncat(dest2, source2, 6);
+	strncat_s(dest2, source2, 6);
 	cout << dest2 << endl;
 
 }
@@ -179,7 +179,7 @@ void copystring() {
 	const char* source3 = "C++ is a multipurpose programming language.";
 	char* dest3 = new char[strlen(source3) + 1];
 
-	strcpy(dest3, source3);
+	strcpy_s(dest3, strlen(dest3 + 1), source3);
 
 	cout << "Sizeof(dest3): " << sizeof(dest3) << endl;
 	cout << "strlen(dest3): " << strlen(dest3) << endl;
@@ -195,7 +195,7 @@ void copystringlimited() {
 	char dest4[]{ 'a', 'b', 'c', 'd', 'e', 'f', '\0' };
 
 	cout << "dest4: " << dest4 << endl;
-	strncpy(dest4, source4, 5);
+	strncpy_s(dest4, source4, 5);
 	cout << "dest4: " << dest4 << endl;
 
 }
