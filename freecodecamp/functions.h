@@ -17,3 +17,58 @@ void datafromfunction() {
 	cout << "max_str: " << out_str << endl;
 
 }
+
+void max_int(int input1, int input2, int& output) {
+
+	if (input1 > input2) { output = input1; }
+	else { output = input2; };
+
+}
+
+void intfromfunction() {
+
+	int out_int;
+	int num1{ 45 };
+	int num2{ 23 };
+	max_int(num1, num2, out_int);
+	cout << "max_str: " << out_int << endl;
+
+}
+
+void max_double(double input1, double input2, double* output) {
+
+	if (input1 > input2) { *output = input1; }
+	else { *output = input2; };
+
+}
+
+void doublefromfunction() {
+
+	double out_double;
+	double num1{ 45.9 };
+	double num2{ 6.9 };
+	max_double(num1, num2, &out_double);
+	cout << "max_str: " << out_double << endl;
+
+}
+
+
+//overloading
+
+int max(int a, int b) {
+
+	return (a > b) ? a : b;
+
+}
+
+double max(double a, double b) {
+
+	return (a > b) ? a : b;
+
+}
+
+string_view max(string_view a, string_view b) {
+
+	return (a > b) ? a : b;
+
+}
