@@ -104,16 +104,40 @@ auto func = []() {
 
 //to call function after definition, add () at end of definition
 
-[] () {
+//example:
+/*
+
+auto func3 = [] (double a, double b) {
+
+	cout << "a + b = " << (a + b) << endl;
+
+} (12.1, 5.7);
+
+*/
+
+auto func2 = []() {
 
 	cout << "Hello world" << endl;
 
-} ();
+};
 
 //pass params
+
+auto func3 = [] (double a, double b) {
+
+	cout << "a + b = " << (a + b) << endl;
+
+}; //(12.1, 5.7)
+
+/* 
+if defined in int main()
+
+then u can do this (define lambda function without name)
 
 [] (double a, double b) {
 
 	cout << "a + b = " << (a + b) << endl;
 
-}(12.1, 5.7);
+} (12.1, 5.7);
+
+*/
