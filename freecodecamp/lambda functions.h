@@ -124,3 +124,23 @@ void caplist2() {
 	}
 
 }
+
+//can also capture all variables not in function scope
+
+void caplistall() {
+
+	int a{ 2 };
+	int b{ 3 };
+	int c{ 4 };
+
+	auto func1 = [=]() {
+		cout << a << ", " << b << ", " << c << endl;
+
+	}; //the variables used in func1 will only be a copy, not using reference
+
+	auto func2 = [&]() {
+		cout << a << ", " << b << ", " << c << endl;
+
+	}; //the variables a b c can also be modified in func2
+
+}
