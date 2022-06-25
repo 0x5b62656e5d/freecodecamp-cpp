@@ -72,3 +72,48 @@ string_view max(string_view a, string_view b) {
 	return (a > b) ? a : b;
 
 }
+
+double max(double a, int b, int c) {
+
+	//overloading funtions can also change # of params
+	return a;
+
+}
+
+
+//lambda functions
+
+//function signature:
+/*
+
+[capture list] {params} -> return type{
+
+	body
+
+};
+
+*/
+//return type is optional, can use auto
+
+auto func = []() {
+
+	cout << "Hello world" << endl;
+
+};
+//can be called with func();
+
+//to call function after definition, add () at end of definition
+
+[] () {
+
+	cout << "Hello world" << endl;
+
+} ();
+
+//pass params
+
+[] (double a, double b) {
+
+	cout << "a + b = " << (a + b) << endl;
+
+}(12.1, 5.7);
