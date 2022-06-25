@@ -53,5 +53,8 @@
     <ClInclude Include="lambda functions.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="function template.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

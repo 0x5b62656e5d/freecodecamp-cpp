@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClInclude Include="Data.h" />
     <ClInclude Include="Error handling.h" />
+    <ClInclude Include="function template.h" />
     <ClInclude Include="functions.h" />
     <ClInclude Include="lambda functions.h" />
     <ClInclude Include="logics and loops.h" />
