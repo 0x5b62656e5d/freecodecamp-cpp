@@ -7,6 +7,7 @@
 #include "Data.h"
 #include "strings and char.h"
 #include "functions.h"
+#include "function template.h"
 
 int main() {
 
@@ -23,9 +24,11 @@ int main() {
 	whattool();
 	chararray();
 
-	dynamicarray(); */
+	dynamicarray();
 
-	datafromfunction();
+	datafromfunction(); */
+
+	int result = multiply <double>(10, 5);
 
 	cout << "Press enter to continue...";
 	cin.get();
