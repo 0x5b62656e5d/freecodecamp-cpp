@@ -32,3 +32,12 @@ template <typename T> const T& maximumref(const T& a, const T& b) {
 }
 
 //allows the variables passed into function to be modified inside function
+
+
+//template specialization for const char* ***have to use existing template for it to work***
+
+template<>
+const char* maximum<const char*>(const char* a, const char* b) {
+	return (strcmp(a, b) > 0) ? a : b;
+
+}
