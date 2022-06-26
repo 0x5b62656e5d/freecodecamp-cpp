@@ -56,5 +56,8 @@
     <ClInclude Include="function template.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="cpp20 concepts.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
