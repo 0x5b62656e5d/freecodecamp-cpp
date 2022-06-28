@@ -143,7 +143,6 @@
     <ClCompile Include="freecodecamp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="concepts.h" />
     <ClInclude Include="cpp20 concepts.h" />
     <ClInclude Include="Data.h" />
     <ClInclude Include="Error handling.h" />
