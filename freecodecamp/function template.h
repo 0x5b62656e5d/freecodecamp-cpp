@@ -35,9 +35,18 @@ template <typename T> const T& maximumref(const T& a, const T& b) {
 
 
 //template specialization for const char* ***have to use existing template for it to work***
+//template specialization for maximum with strings
 
 template<>
 const char* maximum<const char*>(const char* a, const char* b) {
 	return (strcmp(a, b) > 0) ? a : b;
+
+}
+
+//template specializeation for maximum with int
+
+template<>
+int maximum<int>(int a, int b) {
+	return (a < b) ? b : a;
 
 }
