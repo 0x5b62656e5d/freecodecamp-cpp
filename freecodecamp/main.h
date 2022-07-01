@@ -8,6 +8,7 @@
 #include <cctype> //strings and char
 #include <cstring> //strings
 #include <string> //std::string
+#include <concepts> //for cpp20 concepts
 
 using namespace std;
 
