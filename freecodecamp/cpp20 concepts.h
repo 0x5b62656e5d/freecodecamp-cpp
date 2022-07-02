@@ -40,7 +40,7 @@ concept MyIntegral = is_integral_v<T>;
 //syntax 2
 
 template <typename T>
-concept Multipliable = requires(T a, T b) { a* b; };
+concept Multipliable = requires(T a, T b) { a * b; };
 
 //syntax 3
 
