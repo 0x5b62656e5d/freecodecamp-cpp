@@ -100,7 +100,7 @@ T add(T a, T b) requires integral<T>&& requires (T t) {
 														requires sizeof(T) <= 4;
 
 														}
- { return (2 * t); }
+ { return (a + b); }
 
  //this method unclean; replace second requirement/concept with "Tinytype<T>"
 
