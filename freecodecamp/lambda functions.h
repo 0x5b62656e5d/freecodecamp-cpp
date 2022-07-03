@@ -80,7 +80,7 @@ cout << "result: " << [](double a, double b){
 
 // to specify return type, define like this
 
-auto result = [](double a, double b) -> double {
+auto result2 = [](double a, double b) -> double {
 
 	return (a + b);
 
@@ -92,12 +92,13 @@ auto result = [](double a, double b) -> double {
 
 void caplist1() {
 
-	double a{ 10 };
-	double b{ 20 };
+	int a{ 10 };
+	int b{ 20 };
 
 	auto func = [a, b]() -> int {
 
 		cout << (a + b) << endl;
+		return (a + b);
 
 	}();
 
