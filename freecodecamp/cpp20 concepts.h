@@ -66,4 +66,49 @@ T add_2(T a, T b) { return a + b; };
 
 //syntax 3
 
-auto add_3(MyIntegral auto a, MyIntegral auto b) { return a + b; };
+MyIntegral auto add_3(MyIntegral auto a, MyIntegral auto b) { return a + b; };
+
+
+//nested requirements
+
+template <typename T>
+concept Tinytype = requires (T t) {
+	sizeof(T) <= 4; //simple requirement: syntax has to be correct
+	requires sizeof(T) <= 4; //for a concept to reinforce an 
+							 //expression it will require "requires" keyword for it to be evaluated
+
+};
+
+Tinytype auto add(Tinytype auto a, Tinytype auto b) { return a + b; };
+
+//compound requirement
+
+template <typename T>
+concept Addable = requires (T a, T b) {
+	//noexcept is optional
+	{a + b} noexcept -> convertible_to<int>;
+	//will check if a + b is valid syntax, won't throw exceptions, result is convertible to int
+
+};
+
+
+//combining concepts
+
+template <typename T>
+T add(T a, T b) requires integral<T>&& requires (T t) {
+														sizeof(T) <= 4;
+														requires sizeof(T) <= 4;
+
+														}
+ { return (2 * t); }
+
+ //this method unclean; replace second requirement/concept with "Tinytype<T>"
+
+//or can do this:
+//T func(T t) requires integral<T> || floating_point<T>
+//T func(T t) requires integral<T> && Tinytype<T> (below)
+ /*
+ template <typename T>
+ requires integral<T> && Tinytype<T>
+ T add(T a, T b) { return a + b; }
+ */
