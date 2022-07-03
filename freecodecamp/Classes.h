@@ -62,3 +62,24 @@ public:
 //when object is built (CylinderB cylinderb1;), the values of radius and height 
 	//will use values from constructors if there is any (2.0, 2.0) 
 //if there aren't constructors, it will create default constructor (use member variables)
+//to generate default constructor, put "Cylinder() = default;" in public scope
+
+//"setters and getters" (sets and gets member variables from classes
+
+class CylinderC {
+
+private:
+	double base_radius{ 1.0 };
+	double height{ 1.0 };
+
+public:
+
+	//getters - will read member variables
+	double get_radius() { return base_radius; }
+	double get_height() { return height; }
+
+	//setters - can set member variables
+	void set_radius(double radius_param) { base_radius = radius_param; }
+	void set_height(double height_param) { height = height_param; }
+
+};
