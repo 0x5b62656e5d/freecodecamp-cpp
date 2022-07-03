@@ -3,11 +3,15 @@
 #include "numbers.h"
 #include "variables.h"
 #include "Output formatting.h"
+#include "Error handling.h"
 #include "logics and loops.h"
 #include "Data.h"
 #include "strings and char.h"
 #include "functions.h"
+#include "lambda functions.h"
 #include "function template.h"
+#include "cpp20 concepts.h"
+#include "Classes.h"
 
 int main() {
 
@@ -26,9 +30,9 @@ int main() {
 
 	dynamicarray();
 
-	datafromfunction(); */
+	datafromfunction(); 
 
-	int result = multiply <double>(10, 5);
+	int result = multiply <double>(10, 5); */
 
 	cout << "Press enter to continue...";
 	cin.get();
