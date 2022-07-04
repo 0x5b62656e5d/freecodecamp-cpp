@@ -38,7 +38,7 @@ public:
 
 	};
 
-	cylinderB();
+	cylinderB() = default;
 	
 	cylinderB(double radius_param, double height_param); //passed by values, values are copies of parameters
 

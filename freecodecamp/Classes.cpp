@@ -45,6 +45,6 @@ void usearrowpointer() {
 
 	delete c1;
 
-	cylinderB c1(10.0, 5.0);
+	cylinderB c2(10.0, 5.0);
 
 }
