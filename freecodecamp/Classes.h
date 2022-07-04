@@ -17,17 +17,7 @@ public:
 
 //using a class
 
-void usecylinderclass() {
-
-	Cylinder cylinder1;
-	cylinder1.base_radius = 10.0;
-	cylinder1.height = 3;
-	cout << "Volume c1: " << cylinder1.volume();
-
-	Cylinder cylinder2;
-	cout << "Volume c2: " << cylinder2.volume();
-
-}
+void usecylinderclass();
 
 //class constructors
 
@@ -48,14 +38,20 @@ public:
 
 	};
 
-	double CylinderB(double radius_param, double height_param) { //passed by values, values are copies of parameters
-		base_radius = radius_param;
-		height = height_param;
+	cylinderB();
+	
+	cylinderB(double radius_param, double height_param); //passed by values, values are copies of parameters
 
-	};
+	//getters - will read member variables
+	double get_radius();
+	double get_height();
+
+	//setters - can set member variables
+	void set_radius(double radius_param);
+	void set_height(double height_param);
 
 	//functions
-	double volumeB() { return PI * base_radius * base_radius * height; }
+	double volumeB();
 
 };
 
@@ -66,20 +62,6 @@ public:
 
 //"setters and getters" (sets and gets member variables from classes
 
-class CylinderC {
+//arrow pointer notation
 
-private:
-	double base_radius{ 1.0 };
-	double height{ 1.0 };
-
-public:
-
-	//getters - will read member variables
-	double get_radius() { return base_radius; }
-	double get_height() { return height; }
-
-	//setters - can set member variables
-	void set_radius(double radius_param) { base_radius = radius_param; }
-	void set_height(double height_param) { height = height_param; }
-
-};
+void usearrowpointer();
