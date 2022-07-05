@@ -1,6 +1,16 @@
 #pragma once
 #include "main.h"
-# define PI			3.141592653589793238462643383279502884L //for cylinder volume
+#define PI			3.141592653589793238462643383279502884L //for cylinder volume
+
+//arrow pointer notation
+
+void usearrowpointer();
+
+//using a class
+
+void usecylinderclass();
+
+
 
 //first cpp class - cylinder
 
@@ -14,10 +24,6 @@ public:
 	double volume() { return PI * base_radius * base_radius * height; }
 
 };
-
-//using a class
-
-void usecylinderclass();
 
 //class constructors
 
@@ -62,6 +68,26 @@ public:
 
 //"setters and getters" (sets and gets member variables from classes
 
-//arrow pointer notation
+//destructors
 
-void usearrowpointer();
+class Dog {
+
+public:
+	Dog();
+	Dog(string_view name_param, string breed_param, int age_param);
+	~Dog();
+	/*
+	~Dog() {
+
+	delete dog_age;
+	cout << "Dog destructor called for " << dog_name << endl;
+
+	} 
+	*/ //another way to define destructors
+
+private:
+	string dog_name;
+	string dog_breed;
+	int* dog_age{ nullptr };
+
+};
