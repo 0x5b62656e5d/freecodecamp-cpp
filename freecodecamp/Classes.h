@@ -10,6 +10,10 @@ void usearrowpointer();
 
 void usecylinderclass();
 
+//using destructors
+
+void usedestructor();
+
 
 
 //first cpp class - cylinder
@@ -62,7 +66,7 @@ public:
 };
 
 //when object is built (CylinderB cylinderb1;), the values of radius and height 
-	//will use values from constructors if there is any (2.0, 2.0) 
+//will use values from constructors if there is any (2.0, 2.0) 
 //if there aren't constructors, it will create default constructor (use member variables)
 //to generate default constructor, put "Cylinder() = default;" in public scope
 
