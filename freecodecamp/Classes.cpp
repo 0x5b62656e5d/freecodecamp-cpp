@@ -35,6 +35,7 @@ void usearrowpointer() {
 
 }
 
+
 cylinderB::cylinderB(double radius_param, double height_param) { //passed by values, values are copies of parameters
 	base_radius = radius_param;
 	height = height_param;
@@ -65,6 +66,7 @@ Dog::Dog(string_view name_param, string breed_param, int age_param) {
 	dog_breed = breed_param;
 	dog_age = new int;
 	*dog_age = age_param;
+	cout << "dog constructor called for " << dog_name << endl;
 
 }
 
