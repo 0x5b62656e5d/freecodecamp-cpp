@@ -35,6 +35,14 @@ void usearrowpointer() {
 
 }
 
+void usedestructor() {
+
+	Dog* dog1 = new Dog("Fluffy", "Shepherd", 2);
+
+	delete dog1; //destructor for dog will be called
+
+}
+
 
 cylinderB::cylinderB(double radius_param, double height_param) { //passed by values, values are copies of parameters
 	base_radius = radius_param;
@@ -73,6 +81,6 @@ Dog::Dog(string_view name_param, string breed_param, int age_param) {
 Dog::~Dog() {
 
 	delete dog_age;
-	cout << "Dog age destructor called for " << dog_name << endl;
+	cout << "Dog destructor called for " << dog_name << endl;
 
 }
