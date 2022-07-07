@@ -43,6 +43,15 @@ void usedestructor() {
 
 }
 
+void usechaincall() {
+
+	Dog* dog2 = new Dog("Milou", "Shepard", 3);
+	dog2->printinfo();
+
+	//dog2->set_breed("Chihuahua")->set_name("")
+
+}
+
 
 cylinderB::cylinderB(double radius_param, double height_param) { //passed by values, values are copies of parameters
 	base_radius = radius_param;
@@ -57,6 +66,12 @@ double cylinderB::get_height() { return height; }
 void cylinderB::set_radius(double radius_param) { base_radius = radius_param; }
 void cylinderB::set_height(double height_param) { height = height_param; }
 
+void Dog::set_age(int age) { *dog_age = age; }
+void Dog::set_name(string name) { dog_name = name; }
+void Dog::set_breed(string breed) { dog_breed = breed; }
+
+void Dog::printinfo() { cout << dog_name << ", " << dog_breed << ", " << *dog_age << endl; }
+
 //destructors
 
 Dog::Dog() {
@@ -65,6 +80,11 @@ Dog::Dog() {
 	dog_breed = "None";
 	dog_age = new int;
 	*dog_age = 0;
+
+	//the "this" pointer
+
+	cout << "Dog: " << dog_name << " constructed at " << this << endl;
+	//will print out the address of the name of the dog
 
 }
 
@@ -82,5 +102,13 @@ Dog::~Dog() {
 
 	delete dog_age;
 	cout << "Dog destructor called for " << dog_name << endl;
+
+}
+
+void Dog::thethispointer(const string& dog_name) {
+
+	this->dog_name = dog_name;
+	//if a member variable has the same name as parameter, then u can use
+	//this->variablename
 
 }
