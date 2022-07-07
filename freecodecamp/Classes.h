@@ -95,3 +95,16 @@ private:
 	int* dog_age{ nullptr };
 
 };
+
+class Dog2 {
+
+public:
+	Dog2();
+	Dog2(const string& name_param, const string& breed_param, int age_param);
+
+private:
+	string dog_name;
+	string dog_breed;
+	int dog_age;
+
+};
