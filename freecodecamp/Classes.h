@@ -80,6 +80,14 @@ public:
 	Dog();
 	Dog(string_view name_param, string breed_param, int age_param);
 	~Dog();
+
+	void set_age(int age);
+	void set_name(string name);
+	void set_breed(string breed);
+
+	void printinfo();
+
+	void thethispointer(const string& dog_name);
 	/*
 	~Dog() {
 
