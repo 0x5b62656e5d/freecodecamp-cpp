@@ -60,6 +60,7 @@ void chaincallbyref() {
 	dog3.printinfo();
 
 	dog3.set_name2("Bob").set_breed2("Chihuahua").set_age2(3);
+	//if using ref, use dot chain call
 
 	dog3.printinfo();
 
@@ -168,3 +169,7 @@ void Dog::thethispointer(const string& dog_name) {
 	//this->variablename
 
 }
+
+//struct
+
+Cat::Cat(const string& cat_name) { name = cat_name; }
