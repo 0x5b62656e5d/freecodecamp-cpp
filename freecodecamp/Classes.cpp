@@ -43,12 +43,25 @@ void usedestructor() {
 
 }
 
-void usechaincall() {
+void chaincallbyptr() {
 
 	Dog* dog2 = new Dog("Milou", "Shepard", 3);
 	dog2->printinfo();
 
-	//dog2->set_breed("Chihuahua")->set_name("")
+	dog2->set_breed("Chihuahua")->set_name("doggo")->set_age(5);
+
+	delete dog2;
+
+}
+
+void chaincallbyref() {
+
+	Dog dog3("Joe", "Bulldog", 4);
+	dog3.printinfo();
+
+	dog3.set_name2("Bob").set_breed2("Chihuahua").set_age2(3);
+
+	dog3.printinfo();
 
 }
 
@@ -66,9 +79,52 @@ double cylinderB::get_height() { return height; }
 void cylinderB::set_radius(double radius_param) { base_radius = radius_param; }
 void cylinderB::set_height(double height_param) { height = height_param; }
 
-void Dog::set_age(int age) { *dog_age = age; }
-void Dog::set_name(string name) { dog_name = name; }
-void Dog::set_breed(string breed) { dog_breed = breed; }
+
+//function setup for chained calls using ptr
+
+Dog* Dog::set_name(const string& dog_name) {
+
+	this->dog_name = dog_name;
+	return this;
+
+}
+
+Dog* Dog::set_breed(const string& dog_breed) {
+
+	this->dog_breed = dog_breed;
+	return this;
+
+}
+
+Dog* Dog::set_age(int age) {
+
+	*(this->dog_age) = age;
+	return this;
+
+}
+
+//function setup for chined calls using ref
+
+Dog& Dog::set_name2(const string& dog_name) {
+
+	this->dog_name = dog_name;
+	return *this;
+
+}
+
+Dog& Dog::set_breed2(const string& dog_breed) {
+
+	this->dog_breed = dog_breed;
+	return *this;
+
+}
+
+Dog& Dog::set_age2(int age) {
+
+	*(this->dog_age) = age;
+	return *this;
+
+}
 
 void Dog::printinfo() { cout << dog_name << ", " << dog_breed << ", " << *dog_age << endl; }
 
