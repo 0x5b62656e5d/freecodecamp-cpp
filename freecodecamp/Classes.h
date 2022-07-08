@@ -120,3 +120,16 @@ private:
 	int dog_age;
 
 };
+
+//in classes, member variables are private by default
+//in struct, member variabels are public by default
+
+struct Cat {
+
+public:
+	Cat(const string& cat_name);
+
+private:
+	string name;
+
+};
