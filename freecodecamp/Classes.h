@@ -81,9 +81,13 @@ public:
 	Dog(string_view name_param, string breed_param, int age_param);
 	~Dog();
 
-	void set_age(int age);
-	void set_name(string name);
-	void set_breed(string breed);
+	Dog* set_age(int age);
+	Dog* set_name(const string& name);
+	Dog* set_breed(const string& breed);
+
+	Dog& set_age2(int age);
+	Dog& set_name2(const string& dog_name);
+	Dog& set_breed2(const string& dog_breed);
 
 	void printinfo();
 
