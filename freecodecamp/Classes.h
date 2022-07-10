@@ -111,7 +111,7 @@ private:
 class Dog2 {
 
 public:
-	Dog2();
+	Dog2() = default;
 	Dog2(const string& name_param, const string& breed_param, int age_param);
 
 private:
@@ -132,4 +132,9 @@ public:
 private:
 	string name;
 
+};
+
+struct Point {
+	double x;
+	double y;
 };
