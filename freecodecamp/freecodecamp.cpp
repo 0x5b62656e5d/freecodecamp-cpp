@@ -12,6 +12,7 @@
 #include "function template.h"
 #include "cpp20 concepts.h"
 #include "Classes.h"
+#include "inheritance.h"
 
 int main() {
 
