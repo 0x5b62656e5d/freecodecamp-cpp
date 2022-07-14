@@ -32,13 +32,3 @@ ostream& operator<<(ostream& out, const Player& player) {
 Player::Player(string_view game_param)
 	: m_game(game_param)
 {}
-
-
-void usetest() {
-
-	test test1(9);
-	test test2(10);
-
-	test1.reset(test1);
-
-}
