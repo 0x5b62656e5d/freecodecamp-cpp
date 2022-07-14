@@ -17,6 +17,9 @@
 int main() {
 
 	cout << "Hello World!\n" << endl;
+
+	printplayer();
+
 	/* cout << hexa << endl;
 	cout << scinum1 << endl;
 
