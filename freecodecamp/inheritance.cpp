@@ -19,12 +19,29 @@ ostream& operator<<(ostream& out, const Person& person) {
 
 }
 
+void Person::setname(string_view fname, string_view lname) {
+
+	first_name = fname;
+	last_name = lname;
+
+}
+
 //player class
+
+void printplayer() {
+
+	Player p1("Basketball");
+
+	p1.setname("Jack", "Joe");
+
+	cout << "player: " << p1 << endl;
+
+}
 
 ostream& operator<<(ostream& out, const Player& player) {
 	out << "Person [ game: " << player.m_game << ", name: "
 		<< player.get_fname() << " " << player.get_lname() 
-			<< " ]" << endl;
+			<< " ]";
 	return out;
 
 }
