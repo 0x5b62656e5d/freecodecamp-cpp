@@ -21,7 +21,8 @@ public:
 	const string get_fname() const { return first_name; }
 	const string get_lname() const { return last_name; }
 
-private:
+protected: //when using protected, derived classes can read
+		//and write from protected members in base class
 	string first_name{ "Mysterious" };
 	string last_name{ "Person" };
 
@@ -36,6 +37,7 @@ class Player : public Person { //syntax to derive from class
 public:
 	Player() = default;
 	Player(string_view game_param);
+	Player(string_view fname, string_view lname, string_view game_param);
 	//~Player();
 
 private:

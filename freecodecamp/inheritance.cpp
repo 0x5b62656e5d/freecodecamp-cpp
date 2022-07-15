@@ -31,10 +31,12 @@ void Person::setname(string_view fname, string_view lname) {
 void printplayer() {
 
 	Player p1("Basketball");
+	Player p2("Joe", "Mama", "Baseball");
 
 	p1.setname("Jack", "Joe");
 
-	cout << "player: " << p1 << endl;
+	cout << "player 1: " << p1 << endl;
+	cout << "player 2: " << p2 << endl;
 
 }
 
@@ -49,3 +51,10 @@ ostream& operator<<(ostream& out, const Player& player) {
 Player::Player(string_view game_param)
 	: m_game(game_param)
 {}
+
+Player::Player(string_view fname, string_view lname, string_view game_param) {
+	first_name = fname;
+	last_name = lname;
+	m_game = game_param;
+
+}
