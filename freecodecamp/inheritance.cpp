@@ -58,3 +58,10 @@ Player::Player(string_view fname, string_view lname, string_view game_param) {
 	m_game = game_param;
 
 }
+
+ostream& operator<<(ostream& out, const Player2& player2) {
+	out << "Person [ name: " << player2.get_fname() << " " 
+		<< player2.get_lname() << " ]";
+	return out;
+
+}
