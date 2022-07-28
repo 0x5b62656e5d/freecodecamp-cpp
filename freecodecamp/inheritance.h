@@ -14,7 +14,7 @@ class Person {
 public:
 	Person() = default;
 	Person(string& fname_param, string& lname_param);
-	//~Person();
+	~Person() = default;
 
 	void setname(string_view fname, string_view lname);
 
@@ -38,9 +38,29 @@ public:
 	Player() = default;
 	Player(string_view game_param);
 	Player(string_view fname, string_view lname, string_view game_param);
-	//~Player();
+	~Player() = default;
 
 private:
 	string m_game{ "None" };
+
+};
+
+//resurrecting members from private inheritance
+//use "using" keyword in derived class
+
+class Player2 : private Person {
+
+	friend ostream& operator<< (ostream& out, const Player2& player2);
+
+public:
+	Player2() = default;
+	~Player2() = default;
+
+protected:
+	using Person::first_name;
+	using Person::last_name; //fname and lname will remain
+							//protected in class player2
+	using Person::get_fname;
+	using Person::get_lname;
 
 };
