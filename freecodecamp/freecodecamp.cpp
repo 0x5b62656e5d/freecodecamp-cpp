@@ -13,6 +13,7 @@
 #include "cpp20 concepts.h"
 #include "Classes.h"
 #include "inheritance.h"
+#include "inheritance2.h"
 
 int main() {
 

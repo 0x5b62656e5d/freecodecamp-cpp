@@ -143,6 +143,7 @@
     <ClCompile Include="Classes.cpp" />
     <ClCompile Include="freecodecamp.cpp" />
     <ClCompile Include="inheritance.cpp" />
+    <ClCompile Include="inheritance2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="function template.h" />
     <ClInclude Include="functions.h" />
     <ClInclude Include="inheritance.h" />
+    <ClInclude Include="inheritance2.h" />
     <ClInclude Include="lambda functions.h" />
     <ClInclude Include="logics and loops.h" />
     <ClInclude Include="main.h" />
