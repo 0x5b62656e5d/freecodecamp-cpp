@@ -14,6 +14,7 @@
 #include "Classes.h"
 #include "inheritance.h"
 #include "inheritance2.h"
+#include "polymorphism.h"
 
 int main() {
 

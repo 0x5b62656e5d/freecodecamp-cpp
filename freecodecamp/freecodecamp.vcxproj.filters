@@ -27,6 +27,9 @@
     <ClCompile Include="inheritance2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="polymorphism.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -75,6 +78,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="inheritance2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="polymorphism.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

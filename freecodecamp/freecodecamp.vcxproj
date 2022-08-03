@@ -144,6 +144,7 @@
     <ClCompile Include="freecodecamp.cpp" />
     <ClCompile Include="inheritance.cpp" />
     <ClCompile Include="inheritance2.cpp" />
+    <ClCompile Include="polymorphism.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="main.h" />
     <ClInclude Include="numbers.h" />
     <ClInclude Include="Output formatting.h" />
+    <ClInclude Include="polymorphism.h" />
     <ClInclude Include="strings and char.h" />
     <ClInclude Include="var.h" />
     <ClInclude Include="variables.h" />
