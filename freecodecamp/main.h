@@ -9,6 +9,7 @@
 #include <cstring> //strings
 #include <string> //std::string
 #include <concepts> //for cpp20 concepts
+#include <memory> //for smart pointers
 
 using namespace std;
 
