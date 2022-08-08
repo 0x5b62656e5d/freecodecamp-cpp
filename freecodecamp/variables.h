@@ -1,6 +1,8 @@
 #pragma once
 #include "main.h"
 
+//static keyword allocates space for variable in the whole program
+
 static int intnum{ 0 }; //whole number
 static double doublenum{ 1.23897234 }; //decimal number, precision up to 15
 static float floatnum{ 1.2367f }; //decimal number, , precision up to 7
