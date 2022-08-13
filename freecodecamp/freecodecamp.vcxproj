@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Abstract classes.cpp" />
     <ClCompile Include="Classes.cpp" />
     <ClCompile Include="freecodecamp.cpp" />
     <ClCompile Include="inheritance.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="polymorphism.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Abstract classes.h" />
     <ClInclude Include="Classes.h" />
     <ClInclude Include="cpp20 concepts.h" />
     <ClInclude Include="Data.h" />
