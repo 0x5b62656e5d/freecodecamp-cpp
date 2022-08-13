@@ -82,3 +82,58 @@ public:
 
 //add virtual specifier to destructor will properly delete objects
 //if base pointers were used to manage derived objects
+
+//dynamic casts
+
+class Animal {
+
+public:
+	Animal() = default;
+	Animal(string_view desc);
+	virtual ~Animal();
+
+	virtual void breathe() const {
+		cout << "Animal::breathe() called for : " << m_desc << endl;
+
+	}
+
+protected:
+	string m_desc{};
+
+};
+
+class Feline : public Animal {
+
+public:
+	Feline() = default;
+	Feline(string_view fur, string_view desc);
+	virtual ~Feline();
+
+	virtual void run() const {
+		cout << "Feline " << m_desc << " is running" << endl;
+
+	}
+
+	void dosomething() {
+		cout << "Feline doing something" << endl;
+
+	}
+
+protected:
+	string m_fur{};
+
+};
+
+class Dog3 : public Feline {
+
+public:
+	Dog3() = default;
+	Dog3(string_view fur, string_view desc);
+	virtual ~Dog3();
+
+	virtual void bark() const {
+		cout << "Dog::bark called for " << m_desc << endl;
+
+	}
+
+};

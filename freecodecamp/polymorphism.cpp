@@ -98,3 +98,46 @@ void polymorphicarray() {
 	}
 
 }
+
+//dynamic casts
+
+Animal::Animal(string_view desc) : m_desc(desc) {}
+
+Feline::Feline(string_view fur, string_view desc)
+	: m_fur(fur), Animal(desc) {}
+
+Dog3::Dog3(string_view fur, string_view desc)
+	: Feline(fur, desc) {}
+
+Animal::~Animal() {}
+Feline::~Feline() {}
+Dog3::~Dog3() {}
+
+void dynamiccasts() {
+
+	//if dynamic cast = succeed, will get valid pointer
+	//if fail, will get nullptr
+
+	Animal* animal1 = new Feline("stripes", "feline1");
+
+	Feline* felineptr = dynamic_cast<Feline*>(animal1);
+
+	if (felineptr) { felineptr->dosomething(); }
+	else { cout << "Couldn't cast to Feline ptr" << endl; }
+
+	//for references (avoid dynamic_casts with ref)
+
+	Feline feline2("stripes", "feline2");
+	Animal& animalref = feline2;
+
+	Feline& felineref{ dynamic_cast<Feline&>(animalref) };
+	felineref.dosomething();
+
+	//not pointer but to check if value was valid we can
+	//turn ref into ptr
+
+	Feline* felineptr2{ dynamic_cast<Feline*>(&animalref) };
+	if (felineptr2) { felineptr2->dosomething(); }
+	else { cout << "Couldn't cast to Feline ptr" << endl; }
+
+}
